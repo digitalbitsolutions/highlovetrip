@@ -201,7 +201,13 @@ a:hover {
   border-top: 0;
 }
 
+.page-id-431 #main > .main_color.container_wrap.container_wrap_first {
+  background: #ffffff;
+}
+
 .page-id-431 #main > .container_wrap > .container,
+.page-id-431 .template-page.content,
+.page-id-431 .post-entry-431,
 .page-id-431 .template-page .entry-content-wrapper,
 .page-id-431 .template-page .entry-content-wrapper > div {
   width: 100%;
@@ -210,11 +216,30 @@ a:hover {
   margin: 0;
 }
 
+.page-id-431 .avia_code_block_0,
+.page-id-431 .avia_code_block_0 .avia_codeblock {
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+}
+
 .page-id-431 .hlt-home-hero {
   position: relative;
   min-height: 100svh;
   overflow: hidden;
   background: #ffffff;
+}
+
+.page-id-431 .hlt-home-hero::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: clamp(90px, 14vw, 180px);
+  background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0.82) 58%, #ffffff 100%);
+  pointer-events: none;
+  z-index: 2;
 }
 
 .page-id-431 .hlt-home-hero-video {
@@ -229,7 +254,8 @@ a:hover {
 .page-id-431 .hlt-home-hero-overlay {
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgba(255,255,255,0.2) 0%, rgba(255,255,255,0.1) 42%, rgba(255,255,255,0.7) 75%, #ffffff 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.12) 36%, rgba(255,255,255,0.78) 70%, #ffffff 100%);
+  z-index: 1;
 }
 
 .page-id-431 .hlt-home-hero-content {
@@ -265,9 +291,9 @@ a:hover {
 .page-id-431 .hlt-home-scroll {
   position: absolute;
   left: 50%;
-  bottom: 26px;
+  bottom: clamp(42px, 7vw, 84px);
   transform: translateX(-50%);
-  z-index: 3;
+  z-index: 4;
   color: #111111;
   font-size: 28px;
   line-height: 1;
@@ -277,7 +303,7 @@ a:hover {
 
 .page-id-431 .hlt-home-offer-wrap {
   background: #ffffff !important;
-  padding: clamp(45px, 7vw, 90px) 0 120px;
+  padding: clamp(36px, 5vw, 64px) 0;
 }
 
 /* Forzar todos los textos dentro de offer-wrap a negro */
@@ -310,8 +336,13 @@ a:hover {
   font-size: clamp(18px, 4.6vw, 44px);
   line-height: 1.02;
   letter-spacing: 0.03em;
-  color: #000000 !important;
-  text-shadow: none;
+  color: #ffffff !important;
+  -webkit-text-stroke: 1px rgba(198, 232, 255, 0.55);
+  text-shadow:
+    0 0 1px rgba(255, 255, 255, 0.95),
+    0 0 8px rgba(122, 192, 255, 0.85),
+    0 0 18px rgba(92, 173, 255, 0.78),
+    0 8px 22px rgba(76, 156, 240, 0.38);
   white-space: nowrap;
 }
 
@@ -457,6 +488,6 @@ a:hover {
   }
 
   .page-id-431 .hlt-home-offer-wrap {
-    padding-top: 37px;
+    padding: 34px 0;
   }
 }
