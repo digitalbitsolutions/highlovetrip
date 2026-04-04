@@ -1,0 +1,61 @@
+services:
+  db:
+    image: mysql:8.4
+    container_name: hlt_wp_db
+    restart: unless-stopped
+    environment:
+      MYSQL_DATABASE: ${WORDPRESS_DB_NAME}
+      MYSQL_USER: ${WORDPRESS_DB_USER}
+      MYSQL_PASSWORD: ${WORDPRESS_DB_PASSWORD}
+      MYSQL_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD}
+    command:
+      - --character-set-server=utf8mb4
+      - --collation-server=utf8mb4_unicode_ci
+    volumes:
+      - db_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD-SHELL", "mysqladmin ping -h localhost -u root -p$$MYSQL_ROOT_PASSWORD --silent"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+
+  wordpress:
+    image: wordpress:php8.3-apache
+    container_name: hlt_wordpress
+    restart: unless-stopped
+    depends_on:
+      db:
+        condition: service_healthy
+    ports:
+      - "${WORDPRESS_PORT}:80"
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: ${WORDPRESS_DB_USER}
+      WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
+      WORDPRESS_DB_NAME: ${WORDPRESS_DB_NAME}
+    volumes:
+      - .:/var/www/html
+      - ./wp-config-docker.php:/var/www/html/wp-config.php:ro
+      - ./php-conf/php.ini:/usr/local/etc/php/conf.d/custom.ini:ro
+
+  wpcli:
+    image: wordpress:cli-php8.3
+    container_name: hlt_wp_cli
+    depends_on:
+      db:
+        condition: service_healthy
+      wordpress:
+        condition: service_started
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: ${WORDPRESS_DB_USER}
+      WORDPRESS_DB_PASSWORD: ${WORDPRESS_DB_PASSWORD}
+      WORDPRESS_DB_NAME: ${WORDPRESS_DB_NAME}
+    volumes:
+      - .:/var/www/html
+      - ./wp-config-docker.php:/var/www/html/wp-config.php:ro
+    entrypoint: ["wp"]
+
+volumes:
+  db_data:
+    name: hlt_wp_db_data

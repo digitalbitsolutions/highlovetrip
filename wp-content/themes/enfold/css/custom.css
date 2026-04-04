@@ -1,0 +1,167 @@
+/* Have fun adding your style here :) - PS: At all times this file should contain a comment or a rule, otherwise opera might act buggy :( */
+
+/* General Custom CSS */
+
+/* HLT Home - Invertir colores debajo del HERO */
+.page-id-431 .hlt-home-offer-wrap {
+  background: #ffffff !important;
+  padding: clamp(45px, 7vw, 90px) 0 120px;
+}
+
+/* Forzar todos los textos dentro de offer-wrap a negro */
+.page-id-431 .hlt-home-offer-wrap,
+.page-id-431 .hlt-home-offer-wrap *,
+.page-id-431 .hlt-home-offer-wrap h1,
+.page-id-431 .hlt-home-offer-wrap h2,
+.page-id-431 .hlt-home-offer-wrap h3,
+.page-id-431 .hlt-home-offer-wrap h4,
+.page-id-431 .hlt-home-offer-wrap h5,
+.page-id-431 .hlt-home-offer-wrap h6,
+.page-id-431 .hlt-home-offer-wrap p,
+.page-id-431 .hlt-home-offer-wrap span,
+.page-id-431 .hlt-home-offer-wrap div,
+.page-id-431 .hlt-home-offer-wrap label {
+  color: #000000 !important;
+}
+
+.page-id-431 .hlt-home-offer-head h2 {
+  margin: 0;
+  font-family: 'DrukWideBold', 'DrukTextWide', sans-serif;
+  width: 100%;
+  max-width: 100%;
+  font-size: clamp(18px, 4.6vw, 44px);
+  line-height: 1.02;
+  letter-spacing: 0.03em;
+  color: #000000 !important;
+  text-shadow: none;
+  white-space: nowrap;
+}
+
+.page-id-431 .hlt-home-offer-head p {
+  margin: 14px 0 0;
+  font-family: 'DrukTextWide', 'GraphikHLT', sans-serif;
+  font-size: 20px;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  color: #000000 !important;
+}
+
+.page-id-431 .hlt-home-form .av-form-label {
+  font-family: 'PoppinsHLT', 'GraphikHLT', sans-serif;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #000000 !important;
+}
+
+.page-id-431 .hlt-home-form .text_input,
+.page-id-431 .hlt-home-form textarea {
+  height: 46px;
+  border-radius: 0;
+  background: #ffffff !important;
+  border: 1px solid #cccccc !important;
+  color: #000000 !important;
+  font-family: 'GraphikHLT', 'PoppinsHLT', sans-serif;
+}
+
+/* Forzar placeholder a negro */
+.page-id-431 .hlt-home-form .text_input::placeholder,
+.page-id-431 .hlt-home-form textarea::placeholder {
+  color: #000000 !important;
+}
+
+/* Botón ENVIAR - colores invertidos */
+.page-id-431 .hlt-home-form .button,
+.page-id-431 .hlt-home-form input[type="submit"] {
+  background: #000000 !important;
+  color: #ffffff !important;
+  border: 1px solid #000000 !important;
+}
+
+.page-id-431 .hlt-home-form .button:hover,
+.page-id-431 .hlt-home-form input[type="submit"]:hover {
+  background: #f0f0f0 !important;
+  color: #000000 !important;
+  border: 1px solid #cccccc !important;
+}
+
+.page-id-431 .hlt-home-footer-wrap {
+  padding: 90px 0 80px;
+  background: #ffffff !important;
+  border-top: 1px solid rgba(0, 0, 0, 0.15);
+}
+
+/* Forzar todos los textos dentro de footer-wrap a negro */
+.page-id-431 .hlt-home-footer-wrap,
+.page-id-431 .hlt-home-footer-wrap *,
+.page-id-431 .hlt-home-footer-wrap h1,
+.page-id-431 .hlt-home-footer-wrap h2,
+.page-id-431 .hlt-home-footer-wrap h3,
+.page-id-431 .hlt-home-footer-wrap h4,
+.page-id-431 .hlt-home-footer-wrap h5,
+.page-id-431 .hlt-home-footer-wrap h6,
+.page-id-431 .hlt-home-footer-wrap p,
+.page-id-431 .hlt-home-footer-wrap span,
+.page-id-431 .hlt-home-footer-wrap div,
+.page-id-431 .hlt-home-footer-wrap a {
+  color: #000000 !important;
+}
+
+.page-id-431 .hlt-home-socials img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  opacity: 1 !important;
+  filter: brightness(0) !important;
+}
+
+.page-id-431 .hlt-home-cta {
+  display: inline-block;
+  padding: 9px 28px;
+  border: 1px solid #000000 !important;
+  color: #000000 !important;
+  text-decoration: none;
+  font-family: 'DrukTextWide', 'GraphikHLT', sans-serif;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  font-size: 12px;
+}
+
+.page-id-431 .hlt-home-cta:hover {
+  background: #000000 !important;
+  color: #ffffff !important;
+}
+
+.page-id-431 .hlt-home-copy {
+  margin-top: 16px;
+  color: #000000 !important;
+  font-family: 'PoppinsHLT', 'GraphikHLT', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 10px;
+}
+
+
+
+
+/*
+Desktop Styles
+================================================== */
+/* Note: Add new css to the media query below that you want to only effect the desktop view of your site */
+
+@media only screen and (min-width: 768px) {
+  /* Add your Desktop Styles here */
+
+}
+
+
+
+/*
+Mobile Styles
+================================================== */
+/* Note: Add new css to the media query below that you want to only effect the Mobile and Tablet Portrait view */
+
+@media only screen and (max-width: 767px) {
+  /* Add your Mobile Styles here */
+
+}

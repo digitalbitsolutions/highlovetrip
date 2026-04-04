@@ -1,0 +1,24 @@
+# OS and editor files
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+
+# Local environment and secrets
+.env
+wp-config.php
+home_content.sql
+
+# Backups and migration artifacts
+backups/
+wp-content/ai1wm-backups/
+wp-content/plugins/all-in-one-wp-migration/storage/
+
+# Runtime and generated content
+wp-content/cache/
+wp-content/debug.log
+wp-content/upgrade/
+wp-content/uploads/
+
+# Server-specific validation files
+.well-known/

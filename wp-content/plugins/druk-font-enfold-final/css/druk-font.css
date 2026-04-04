@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'DrukTextWide';
+    src: url('/wp-content/themes/enfold/tipografia/Druk Text Wide Web Medium Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body, h1, h2, h3, h4, h5, h6 {
+    font-family: 'DrukTextWide', sans-serif !important;
+}
