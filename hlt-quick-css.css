@@ -131,6 +131,17 @@ a:hover {
   backdrop-filter: blur(8px);
 }
 
+#top #header .av-main-nav > li > a:hover,
+#top #header .av-main-nav > li > a:focus,
+#top #header .av-main-nav > li > a:hover .avia-menu-text,
+#top #header .av-main-nav > li > a:focus .avia-menu-text,
+#top #header .av-main-nav > li > a:hover .avia-menu-subtext,
+#top #header .av-main-nav > li > a:focus .avia-menu-subtext,
+#top #header .av-main-nav > li > a:hover .avia-font-entypo-fontello,
+#top #header .av-main-nav > li > a:focus .avia-font-entypo-fontello {
+  color: #e75f07 !important;
+}
+
 #top .main_color .container_wrap,
 #top .alternate_color.avia-section,
 #top .main_color.avia-section {
