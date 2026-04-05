@@ -6,6 +6,11 @@ Last updated: 2026-04-05
 
 This project currently uses a manual delivery flow, not a fully automated CI/CD pipeline.
 
+Decision for now:
+
+- stay on manual/semi-manual delivery
+- do not implement or assume fully automated CI/CD yet
+
 The practical source of truth is:
 
 - local code in this repo
@@ -38,6 +43,8 @@ The goal is to keep production and local `1:1`.
 - `wp-config.php` in the repo is the production mirror. Local runtime uses `wp-config-docker.php`.
 
 ## Standard workflow
+
+Until this document is explicitly changed, this manual/semi-manual flow remains the active process.
 
 1. Verify local state first.
 2. Make and validate the change locally.
