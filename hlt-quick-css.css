@@ -489,6 +489,166 @@ a:hover {
 }
 
 @media only screen and (max-width: 767px) {
+  .responsive #top .av-hamburger-inner,
+  .responsive #top .av-hamburger-inner::before,
+  .responsive #top .av-hamburger-inner::after {
+    background-color: #f5f9ff !important;
+    opacity: 1 !important;
+  }
+
+  .responsive #top .av-small-burger-icon {
+    transform: none !important;
+    width: 40px;
+  }
+
+  .responsive #top #wrap_all #header .av-small-burger-icon > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 80px;
+    padding: 0 !important;
+  }
+
+  .responsive #top .av-hamburger-box {
+    width: 32px;
+    height: 24px;
+  }
+
+  .responsive #top .av-hamburger-inner,
+  .responsive #top .av-hamburger-inner::before,
+  .responsive #top .av-hamburger-inner::after {
+    width: 32px;
+  }
+
+  .responsive.av-burger-overlay-active #top .av-hamburger-inner,
+  .responsive.av-burger-overlay-active #top .av-hamburger-inner::before,
+  .responsive.av-burger-overlay-active #top .av-hamburger-inner::after {
+    background-color: #ff00ff !important;
+  }
+
+  .responsive #top .av-logo-container .inner-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .responsive #top .logo {
+    width: auto;
+    max-width: calc(100% - 120px);
+    margin: 0;
+    flex: 0 1 auto;
+  }
+
+  .responsive #top .logo a {
+    display: flex;
+    align-items: center;
+    height: 80px;
+  }
+
+  .responsive #top .logo img,
+  .responsive #top .logo svg {
+    width: 96px;
+    max-width: none;
+    max-height: 54px;
+    object-fit: contain;
+  }
+
+  .responsive #top #wrap_all .main_menu {
+    width: auto;
+  }
+
+  .responsive.av-burger-overlay-active #top #wrap_all .main_menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 100vh;
+    padding: 88px 0 24px;
+    background: rgba(4, 8, 18, 0.92);
+    backdrop-filter: blur(14px);
+    overflow-y: auto;
+    z-index: 120;
+  }
+
+  .responsive.av-burger-overlay-active #top .av-burger-overlay {
+    display: none !important;
+  }
+
+  .responsive.av-burger-overlay-active #top #wrap_all #header #avia-menu {
+    display: block;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
+
+  .responsive.av-burger-overlay-active #top #wrap_all #header #avia-menu > li {
+    display: block;
+    opacity: 1;
+    top: 0;
+    left: 0;
+    float: none;
+    width: 100%;
+    margin: 0;
+  }
+
+  .responsive.av-burger-overlay-active #top #wrap_all #header #avia-menu > li.menu-item-search-dropdown,
+  .responsive.av-burger-overlay-active #top #wrap_all #header #avia-menu > li.av-burger-menu-main {
+    display: block;
+    position: fixed;
+    top: 18px;
+    left: auto;
+    width: 40px;
+    margin: 0;
+    z-index: 130;
+  }
+
+  .responsive.av-burger-overlay-active #top #wrap_all #header #avia-menu > li.menu-item-search-dropdown {
+    right: 68px;
+  }
+
+  .responsive.av-burger-overlay-active #top #wrap_all #header #avia-menu > li.av-burger-menu-main {
+    right: 20px;
+  }
+
+  .responsive.av-burger-overlay-active #top #wrap_all #header #avia-menu > li.menu-item-search-dropdown > a,
+  .responsive.av-burger-overlay-active #top #wrap_all #header #avia-menu > li.av-burger-menu-main > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    padding: 0;
+    border: 0;
+  }
+
+  .responsive.av-burger-overlay-active #top #wrap_all #header #avia-menu > li.menu-item-search-dropdown > a .avia_hidden_link_text,
+  .responsive.av-burger-overlay-active #top #wrap_all #header #avia-menu > li.av-burger-menu-main > a .avia_hidden_link_text {
+    display: none;
+  }
+
+  .responsive.av-burger-overlay-active #top #wrap_all #header #avia-menu > li > a {
+    display: block;
+    height: auto;
+    line-height: 1.3;
+    padding: 14px 28px;
+    text-align: left;
+    color: #f5f9ff !important;
+    font-size: 22px;
+    letter-spacing: 0.04em;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
+  .responsive.av-burger-overlay-active #top #wrap_all #header #avia-menu > li > a .avia-menu-text {
+    display: block;
+    color: inherit !important;
+  }
+
+  .responsive.av-burger-overlay-active #top #wrap_all #header #avia-menu > li:not(.menu-item-avia-special):first-child > a {
+    border-top: 1px solid rgba(255, 255, 255, 0.07);
+  }
+
   .page-id-431 #main > .container_wrap_first > .container {
     width: 100%;
     max-width: 100%;
