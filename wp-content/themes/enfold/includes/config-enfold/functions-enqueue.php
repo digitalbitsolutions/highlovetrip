@@ -71,9 +71,12 @@ if( ! function_exists( 'avia_register_frontend_scripts' ) )
 
 
 		//register styles
+		$hlt_quick_css_path = trailingslashit( ABSPATH ) . 'hlt-quick-css.css';
+		$hlt_quick_css_version = file_exists( $hlt_quick_css_path ) ? filemtime( $hlt_quick_css_path ) : $vn;
+
 		wp_register_style( 'avia-style',  $child_theme_url . '/style.css', array(), $vn, 'all' ); //only include in childthemes. has no purpose in main theme
 		wp_register_style( 'avia-custom',  $template_url . '/css/custom.css', array(), $vn, 'all' );
-		wp_register_style( 'hlt-quick-css', get_home_url() . '/hlt-quick-css.css', array(), $vn, 'all' );
+		wp_register_style( 'hlt-quick-css', get_home_url() . '/hlt-quick-css.css', array(), $hlt_quick_css_version, 'all' );
 
 		wp_enqueue_style( 'avia-grid', "{$template_url}/css/grid{$min_css}.css", array(), $vn, 'all' );
 		wp_enqueue_style( 'avia-base', "{$template_url}/css/base{$min_css}.css", array( 'avia-grid' ), $vn, 'all' );
