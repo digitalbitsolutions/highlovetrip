@@ -100,8 +100,6 @@ h3,
 h4,
 h5,
 h6,
-.main_menu ul:first-child > li > a,
-.avia-menu-text,
 .avia-button,
 .woocommerce div.product .product_title,
 .woocommerce ul.products li.product .woocommerce-loop-product__title {
@@ -119,28 +117,7 @@ a:hover {
   color: #8ed8ff;
 }
 
-#header,
-.header_bg,
-#header_main_alternate,
-#socket {
-  background: rgba(3, 8, 16, 0.88);
-  border-color: var(--hlt-border);
-}
 
-#header {
-  backdrop-filter: blur(8px);
-}
-
-#top #header .av-main-nav > li > a:hover,
-#top #header .av-main-nav > li > a:focus,
-#top #header .av-main-nav > li > a:hover .avia-menu-text,
-#top #header .av-main-nav > li > a:focus .avia-menu-text,
-#top #header .av-main-nav > li > a:hover .avia-menu-subtext,
-#top #header .av-main-nav > li > a:focus .avia-menu-subtext,
-#top #header .av-main-nav > li > a:hover .avia-font-entypo-fontello,
-#top #header .av-main-nav > li > a:focus .avia-font-entypo-fontello {
-  color: #e75f07 !important;
-}
 
 #top .main_color .container_wrap,
 #top .alternate_color.avia-section,
@@ -694,23 +671,3 @@ a:hover {
     padding: 34px 0;
   }
 }
-/* --- INICIO CAMBIO AGENTE: DeepSeek-Coder:6.7b (Local Worker) --- */
-/* Requerimiento Harold: Header blanco, Menu negro, Hover naranja #d65e15 */
-#top #header, 
-#top .header_bg, 
-#top #header_main {
-    background-color: #ffffff !important;
-}
-
-#top #header .av-main-nav > li > a {
-    color: #000000 !important;
-}
-
-#top #header .av-main-nav > li > a:hover {
-    color: #d65e15 !important;
-}
-
-#top #header .av-main-nav > li > a .avia-menu-text {
-    color: inherit !important;
-}
-/* --- FIN CAMBIO AGENTE: DeepSeek-Coder:6.7b --- */
