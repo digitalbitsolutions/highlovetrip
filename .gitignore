@@ -8,6 +8,11 @@ Thumbs.db
 .env
 wp-config.php
 home_content.sql
+agent.md
+
+# Local research / scratch workspace
+scratch/
+generated_css*.txt
 
 # Backups and migration artifacts
 backups/
