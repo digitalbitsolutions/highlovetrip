@@ -24,7 +24,7 @@ The goal is to keep production and local `1:1`.
 - The SSH private key is encrypted.
 - The SSH key passphrase must never be stored in the repo, scripts, env files, notes, or committed history.
 - The passphrase must always be requested from the human operator before any production SSH action.
-- In this project, the human operator is the user.
+- In this project, the human operator is either **Harold** (Owner/QA) or **Meeguel** (Dev).
 
 ## Environment facts
 

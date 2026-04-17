@@ -694,3 +694,23 @@ a:hover {
     padding: 34px 0;
   }
 }
+/* --- INICIO CAMBIO AGENTE: DeepSeek-Coder:6.7b (Local Worker) --- */
+/* Requerimiento Harold: Header blanco, Menu negro, Hover naranja #d65e15 */
+#top #header, 
+#top .header_bg, 
+#top #header_main {
+    background-color: #ffffff !important;
+}
+
+#top #header .av-main-nav > li > a {
+    color: #000000 !important;
+}
+
+#top #header .av-main-nav > li > a:hover {
+    color: #d65e15 !important;
+}
+
+#top #header .av-main-nav > li > a .avia-menu-text {
+    color: inherit !important;
+}
+/* --- FIN CAMBIO AGENTE: DeepSeek-Coder:6.7b --- */
