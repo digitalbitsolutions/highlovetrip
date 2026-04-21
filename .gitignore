@@ -24,6 +24,12 @@ wp-content/cache/
 wp-content/debug.log
 wp-content/upgrade/
 wp-content/uploads/
+wp-content/uploads.zip
+
+# Local deploy artifacts
+.deploy_*.tar
+files_modified_last_*.txt
+hlt_local_db_*.sql
 
 # Server-specific validation files
 .well-known/
