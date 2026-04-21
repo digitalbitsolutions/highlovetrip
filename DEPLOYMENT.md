@@ -41,6 +41,7 @@ The goal is to keep production and local `1:1`.
 - Production currently does not have `wp-cli` available in shell.
 - For production WordPress data/config changes, use remote `php` plus `wp-load.php`.
 - `wp-config.php` in the repo is the production mirror. Local runtime uses `wp-config-docker.php`.
+- Enfold brand fonts must live in `wp-content/uploads/fonts` in every environment. Use the same physical equivalent in production, and prefer the HLT font folder (`wp-content/uploads/fonts/hlt`) for theme CSS references instead of duplicating fonts under the theme directory.
 
 ## Standard workflow
 
